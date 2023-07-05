@@ -1,0 +1,31 @@
+body {
+  background-color: wheat;
+}
+
+.top {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+
+  top: calc(50% - 200px);
+  right: calc(50% - 200px);
+}
+
+.bottom {
+  width: 600px;
+  height: 600px;
+
+  position: absolute;
+  top: calc(50% - 300px);
+  right: calc(50% - 300px);
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
